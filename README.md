@@ -1,5 +1,4 @@
 ssh pi@192.168.0.17
-pw: defaults to raspberry, changed to the plant we're watering
 
 
 To check for devices on network:
