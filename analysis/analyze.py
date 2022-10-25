@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sb
 sb.set_style("whitegrid")
 
-df = pd.read_csv("data/soil_sensor_readings.csv")
+df = pd.read_csv("analysis/data/soil_sensor_readings.csv")
 df["time"] = pd.to_datetime(df["time"])
 df = df.set_index("time")
 df.index = df.index.tz_localize('UTC').tz_convert("US/Central")
@@ -43,5 +43,5 @@ for label in ax1[-1].get_xticklabels(which='major'):
 ax1[0].set_title("Wifi-Rosemary Status Report")
 
 plt.tight_layout()
-f1.savefig("plots/sensor_readings.png")
+f1.savefig("analysis/plots/sensor_readings.png")
 plt.close(f1)

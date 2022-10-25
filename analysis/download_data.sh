@@ -1,3 +1,3 @@
-scp pi@192.168.0.17:Documents/soil_sensor_readings.csv ~/Code/PlantWaterer/data
+scp pi@192.168.0.17:Code/RosemarySurvival/pi_files/soil_sensor_readings.csv ~/Code/RosemarySurvival/analysis/data
 
-python analyze.py
+python analysis/analyze.py
