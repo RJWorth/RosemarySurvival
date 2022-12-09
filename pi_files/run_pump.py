@@ -1,7 +1,11 @@
 from gpiozero import LED
+import time
 
 led = LED(18)
 
-led.on()
-time.sleep(3)
-led.off()
+
+def run_pump(led, duration=5):
+    led.on()
+    time.sleep(duration)
+    led.off()
+    return True
