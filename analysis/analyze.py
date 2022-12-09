@@ -33,8 +33,8 @@ f1, ax1 = plt.subplots(2, sharex=True, figsize=[12, 6])
 ax1[0].plot(df["time"], df["temp"], lw=1, color="red", label="Temperature")
 ax1[0].set_ylabel("Temperature (F?)")
 
-ax1[1].scatter(df["time"], df["moisture"], s=5, color="blue", alpha=0.5, label="Moisture")
-ax1[1].plot(df["time"], df["moisture_smoothed"], lw=2, color="blue", label="Moisture (smoothed)")
+ax1[1].scatter(df["time"], df["moisture"], s=5, color="blue", alpha=0.3, label="Moisture")
+ax1[1].plot(df["time"], df["moisture_smoothed"], lw=2, color="green", label="Moisture (smoothed)")
 ax1[1].set_ylabel("Moisture")
 
 for label in ax1[-1].get_xticklabels(which='major'):
